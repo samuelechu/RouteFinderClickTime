@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D139C2BE5B093497879C21C3 /* Pods_RouteFinderClickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCF55AE3904A2D0CB0EA62 /* Pods_RouteFinderClickTime.framework */; };
 		D2C3616B1E18816400AFA8F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3616A1E18816400AFA8F3 /* AppDelegate.swift */; };
 		D2C3616D1E18816400AFA8F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3616C1E18816400AFA8F3 /* ViewController.swift */; };
 		D2C361701E18816400AFA8F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C3616E1E18816400AFA8F3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FD6C9D336F61137D2B8141E /* Pods-RouteFinderClickTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinderClickTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinderClickTime/Pods-RouteFinderClickTime.debug.xcconfig"; sourceTree = "<group>"; };
+		A9DCF55AE3904A2D0CB0EA62 /* Pods_RouteFinderClickTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteFinderClickTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C361671E18816400AFA8F3 /* RouteFinderClickTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteFinderClickTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C3616A1E18816400AFA8F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C3616C1E18816400AFA8F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D2C361711E18816400AFA8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C361741E18816400AFA8F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C361761E18816400AFA8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6310EB5E77F2BA954F9A19 /* Pods-RouteFinderClickTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteFinderClickTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouteFinderClickTime/Pods-RouteFinderClickTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D139C2BE5B093497879C21C3 /* Pods_RouteFinderClickTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6890168C493E08264B473B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6C9D336F61137D2B8141E /* Pods-RouteFinderClickTime.debug.xcconfig */,
+				DD6310EB5E77F2BA954F9A19 /* Pods-RouteFinderClickTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2C3615E1E18816400AFA8F3 = {
 			isa = PBXGroup;
 			children = (
 				D2C361691E18816400AFA8F3 /* RouteFinderClickTime */,
 				D2C361681E18816400AFA8F3 /* Products */,
+				1A6890168C493E08264B473B /* Pods */,
+				D7DD982A86EC20B35C833E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = RouteFinderClickTime;
 			sourceTree = "<group>";
 		};
+		D7DD982A86EC20B35C833E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCF55AE3904A2D0CB0EA62 /* Pods_RouteFinderClickTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C361791E18816400AFA8F3 /* Build configuration list for PBXNativeTarget "RouteFinderClickTime" */;
 			buildPhases = (
+				7143F1EAE90E3E20C87DA261 /* [CP] Check Pods Manifest.lock */,
 				D2C361631E18816400AFA8F3 /* Sources */,
 				D2C361641E18816400AFA8F3 /* Frameworks */,
 				D2C361651E18816400AFA8F3 /* Resources */,
+				17EE3E37417261704D96E20E /* [CP] Embed Pods Frameworks */,
+				FC1A989DEE3A2D1ABE7323D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17EE3E37417261704D96E20E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinderClickTime/Pods-RouteFinderClickTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7143F1EAE90E3E20C87DA261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1A989DEE3A2D1ABE7323D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RouteFinderClickTime/Pods-RouteFinderClickTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C361631E18816400AFA8F3 /* Sources */ = {
@@ -204,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -259,6 +334,7 @@
 		};
 		D2C3617A1E18816400AFA8F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD6C9D336F61137D2B8141E /* Pods-RouteFinderClickTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EJA9W9EPZD;
@@ -272,6 +348,7 @@
 		};
 		D2C3617B1E18816400AFA8F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6310EB5E77F2BA954F9A19 /* Pods-RouteFinderClickTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EJA9W9EPZD;
