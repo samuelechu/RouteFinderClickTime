@@ -37,7 +37,7 @@ extension String {
 }
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate{
+class ViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var shopAddress: UITextField!
     
@@ -45,6 +45,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     var currentLocation: CLLocation?
     
     var tableDelegate : directionsTableViewControllerDelegate!
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if currentLocation != nil{
@@ -101,6 +107,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        self.shopAddress.delegate = self
     }
     
     //Calls this function when the tap is recognized.
