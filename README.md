@@ -1,5 +1,5 @@
 # RouteFinderClickTime
-######Installation Instructions:
+###### Installation Instructions:
 ```
 -Clone repo with Xcode
 -Navigate to cloned repo with Terminal and do "pod install"
